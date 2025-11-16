@@ -1,0 +1,21 @@
+## This is a systemctl service that will run the script after every start.
+## Copy the change-refind-bg.sh file, use that file's location in ExecStart.
+## Create this service in /etc/systemd/system/change-refind-bg.service using root previleges.
+## systemctl start change-refind-bg.service
+## systemctl enable change-refind-bg.service
+
+[Unit]
+Description=Change Refind Background
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=sh /home/ssj/.config/refind-bg/change-refind-bg.sh
+
+[Install]
+WantedBy=multi-user.target
+
