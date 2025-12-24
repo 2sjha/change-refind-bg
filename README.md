@@ -7,7 +7,7 @@ Based on [rEFInd theme regular](https://github.com/bobafetthotmail/refind-theme-
 ## Setup
 
 1. Install <https://github.com/bobafetthotmail/refind-theme-regular>
-2. Copy [backgrounds](./backgrounds/) to rEFInd directory `<esp>/refind/themes/backgrounds` (Make sure the backgrounds are PNG files. If using JPG/JPEG files, convert them to PNG instead of just renaming)
+2. Copy [backgrounds](./backgrounds/) to rEFInd directory `<esp>/refind/themes/backgrounds` (If you want to your images, make sure the backgrounds are PNG files. If you have JPG/JPEG files, convert them to PNG instead of just renaming)
 3. The backgrounds must be named `bg#.png`
 4. Clone this repo to `~/.config/refind-bg`
 5. Copy `change-refind-bg.service` to `/etc/systemd/system/change-refind-bg.service`
