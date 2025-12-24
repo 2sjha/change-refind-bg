@@ -7,9 +7,8 @@ After=network.target
 StartLimitIntervalSec=0
 
 [Service]
-Type=simple
-Restart=always
-RestartSec=1
+Type=oneshot
+RemainAfterExit=true
 User=root
 ExecStart=sh /home/ssj/.config/refind-bg/change-refind-bg.sh
 
